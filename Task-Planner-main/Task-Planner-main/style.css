@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+:root {
+  --todo-bg-color: #D89078;
+  --progress-bg-color: #CA82FF;
+  --revivew-bg-color: #FFE69A;
+  --done-bg-color: #609090;
+}
+
+/* ******************** Index  html ***********************/
+/* #for-index {
+  background-color: #563d7c;
+} */
+
+/* ******************** Form  html ***********************/
+
+#for-form {
+  /* background-image: url(./images/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  color: white;
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#for-form h1 {
+  color: white;
+  margin-top: 80px;
+  padding: 30px;
+  height: auto;
+}
+
+
+
+button:hover {
+  background-color: lightseagreen;
+}
+
+form label {
+  float: left;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+form .font-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+/* ******************** Demo  html ***********************/
+
+#for-demo {
+  background-image: url(./images/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+/* taks background colors */
+
+#for-demo .todo {
+  background-color: var(--todo-bg-color);
+}

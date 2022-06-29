@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <!-- Boostrap Links  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+  <!-- fontwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="for-demo">
+  <header class="d-flex justify-content-center">
+    <h1 class="text-center p-4 text-white">Task Planner</h1>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-success mt-4" style="height: 42px;" data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop">
+      Add Task
+    </button>
+
+  </header>
+  <main>
+    <div class="container py-6 ">
+      <div class="row gap-5 mb-3">
+        <!-- --------------------  Todo --------------------------->
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded bg-info">
+          <h3 class="text-center">Task Name</h3>
+          <div>
+            <!-- taks infor -->
+            <div class="card mb-3">
+              <h5 class="card-header text-center fw-bold">Developing Content</h5>
+              <div class="card-body border">
+                <div class="mb-3 ">
+                  <!-- <label class="form-control for="">Assigned to:</label> -->
+                  <input class=" form-control" type="text" placeholder="Assigned to: David">
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="">Due Date: </label> -->
+                  <input class="form-control" type="text" placeholder="Due Date: 09/06/2022">
+                </div>
+                <div class="mb-3 ">
+                  <!-- <label for="">Description:</label> -->
+                  <textarea class="form-control" id="" cols=" 30" rows="3" placeholder="Description: Edit photo using photosho &&  Edit Video interviews
+                "></textarea>
+                </div>
+                <!-- Edit buttons -->
+                <div class="d-flex gap-3 justify-content-center ">
+                  <a href="#" class="btn btn-secondary">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                  <div class="dropdown">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Status Change</option>
+                      <option selected value="1">To Do </option>
+                      <option value="2">In Progress</option>
+                      <option value="3">Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- --------------------  In Progress --------------------------->
+        <div class="col  col-md-4 col-lg-3 col-sm-6 border rounded bg-info">
+          <h3 class="text-center">Task Name</h3>
+          <div>
+            <!-- taks infor -->
+            <div class="card mb-3">
+              <h5 class="card-header text-center fw-bold">Developing Content</h5>
+              <div class="card-body border">
+                <div class="mb-3 ">
+                  <!-- <label class="form-control for="">Assigned to:</label> -->
+                  <input class=" form-control" type="text" placeholder="Assigned to: David">
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="">Due Date: </label>
+                  <input type="date"> -->
+                  <input class="form-control" type="text" placeholder="Due Date: 09/06/2022">
+                </div>
+                <div class="mb-3 ">
+                  <!-- <label for="">Description:</label> -->
+                  <textarea class="form-control" id="" cols=" 30" rows="3"
+                    placeholder="Description: Write articles on our services, our products and offers"></textarea>
+                </div>
+                <!-- Edit buttons -->
+                <div class="d-flex gap-3 justify-content-center ">
+                  <a href="#" class="btn btn-secondary">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                  <div class="dropdown">
+                    <select class="form-select " aria-label="Default select example">
+                      <option selected class="">Status Change</option>
+                      <option value="1">Todo </option>
+                      <option selected value="2">In Progress</option>
+                      <option value="3">Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- --------------------  Review --------------------------->
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded bg-info">
+          <h3 class="text-center">Task Name</h3>
+          <div>
+            <!-- taks infor -->
+            <div class="card mb-3">
+              <h5 class="card-header text-center fw-bold">Developing Content</h5>
+              <div class="card-body border">
+                <div class="mb-3 ">
+                  <!-- <label class="form-control for="">Assigned to:</label> -->
+                  <input class=" form-control" type="text" placeholder="Assigned to: David">
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="">Due Date: </label>
+                  <input type="date"> -->
+                  <input class="form-control" type="text" placeholder="Due Date: 09/06/2022">
+                </div>
+                <div class="mb-3 ">
+                  <!-- <label for="">Description:</label> -->
+                  <textarea class="form-control" id="" cols=" 30" rows="3"
+                    placeholder="Description: Select the feedback from customer to post on site"></textarea>
+                </div>
+
+                <!-- Edit buttons -->
+                <div class="d-flex gap-3 justify-content-center ">
+                  <a href="#" class="btn btn-secondary">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                  <div class="dropdown">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Status Change</option>
+                      <option value="1">Todo </option>
+                      <option value="2">In Progress</option>
+                      <option selected value="3">Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------  Review --------------------------->
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded bg-info">
+          <h3 class="text-center">Task Name</h3>
+          <div>
+            <!-- taks infor -->
+            <div class="card mb-3">
+              <h5 class="card-header text-center fw-bold">Developing Content</h5>
+              <div class="card-body border">
+                <div class="mb-3 ">
+                  <!-- <label class="form-control for="">Assigned to:</label> -->
+                  <input class=" form-control" type="text" placeholder="Assigned to: David">
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="">Due Date: </label>
+                  <input type="date"> -->
+                  <input class="form-control" type="text" placeholder="Due Date: 09/06/2022">
+                </div>
+                <div class="mb-3 ">
+                  <!-- <label for="">Description:</label> -->
+                  <textarea class="form-control" id="" cols=" 30" rows="3"
+                    placeholder="Description: Select the feedback from customer to post on site"></textarea>
+                </div>
+
+                <!-- Edit buttons -->
+                <div class="d-flex gap-3 justify-content-center ">
+                  <a href="#" class="btn btn-secondary">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                  <div class="dropdown">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Status Change</option>
+                      <option value="1">Todo </option>
+                      <option value="2">In Progress</option>
+                      <option selected value="3">Review</option>
+                      <option value="3">Done</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------- Done --------------------------->
+        <div class="col col-md-4 col-lg-3 col-sm-6 border rounded bg-info">
+          <h3 class="text-center">Task Name</h3>
+          <!-- taks infor -->
+          <div class="card mb-3">
+            <h5 class="card-header text-center fw-bold">Developing Content</h5>
+            <div class="card-body border">
+              <div class="mb-3 ">
+                <!-- <label class="form-control for="">Assigned to:</label> -->
+                <input class=" form-control" type="text" placeholder="Assigned to: David">
+              </div>
+              <div class="mb-3">
+                <!-- <label for="">Due Date: </label>
+                <input type="date"> -->
+                <input class="form-control" type="text" placeholder="Due Date: 09/06/2022">
+              </div>
+              <div class="mb-3 ">
+                <!-- <label for="">Description:</label> -->
+                <textarea class="form-control" id="" cols=" 30" rows="3"
+                  placeholder="Description: Developed a form for booking appointment"></textarea>
+              </div>
+              <!-- Edit buttons -->
+              <div class="d-flex gap-3 justify-content-center">
+                <a href="#" class="btn btn-secondary done-button">Edit</a>
+                <a href="#" class="btn btn-danger done-button">Delete</a>
+                <div class="dropdown">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Status Change</option>
+                    <option value="1">Todo </option>
+                    <option value="2">In Progress</option>
+                    <option value="3">Review</option>
+                    <option selected value="3">Done</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ------------------------------- Popup Form----------------------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div> -->
+          <div class="modal-body">
+            <form action="" id="add-task">
+              <h1 class="text-center">Task Planner Form</h1>
+
+              <a href="index.html" class="font-icon"><i class="fa-solid fa-circle-xmark fa-2x"></i></a>
+
+              <!-- Name -->
+              <div class="row">
+                <div class="col">
+                  <label for="">First Name: </label>
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <label for="">Last Name: </label>
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+
+              <!-- descrption -->
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descrption: </label><br>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Descrption..."
+                  required></textarea>
+              </div>
+
+              <!-- Assigned to -->
+              <div class="mb-3">
+                <label for="">Assigned to: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected></option>
+                  <option value="1">Yue</option>
+                  <option value="2">Sophia</option>
+                  <option value="3">Sandesh</option>
+                  <option value="3">Others</option>
+                </select>
+              </div>
+
+              <!-- Due date -->
+              <div class="mb-3">
+                <label for="">Due Date: </label>
+                <input type="date" class="form-control mb-3">
+              </div>
+
+              <!-- Status -->
+              <div>
+                <label for="">Status: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected></option>
+                  <option value="1">Todo</option>
+                  <option value="2">In progress</option>
+                  <option value="3">Review</option>
+                  <option value="3">Done</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="#">
+              <button type="button" class="btn btn-success  mb-3">Reset</button>
+            </a>
+            <a href="index.html">
+              <button type="button" class="btn btn-success  mb-3">Submit</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- ------------------------------- End of Form----------------------------- -->
+  </main>
+
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>
